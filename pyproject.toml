@@ -1,0 +1,15 @@
+[project]
+name = "archive-index"
+version = "0.1.0"
+dependencies = ["sentence_transformers", "pypdf"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 30000
+[tool.ruff.lint]
+extend-select = ["E501"]
+[tool.black]
+line-length = 120
